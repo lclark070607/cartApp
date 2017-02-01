@@ -1,0 +1,13 @@
+<section>
+    <h1>Make Your Lemonade Purchases</h1>
+<div>
+    <ul>
+        <li ng-repeat="ingredient in ingredients">
+            <h1>{{ ingredient.name }}</h1>
+            <h2>{{ ingredient.count }} in stock.</h2>
+            <input type="text" placeholder="{{ingredient.placeholder}}">
+            <button-list clickedOn="buy(ingredient)" subtract="ingredient"></button-list>
+        </li>
+    </ul>
+    </div>
+</section>
